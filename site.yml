@@ -1,9 +1,6 @@
 ---
-- hosts: localhost
-  become: yes
-  become_user: clacko
 
-- hosts: "{{ inv_group }}"
+- hosts: linux
   become: yes
   roles:
     - ansible-role-version-gather-linux
