@@ -3,7 +3,7 @@
   become: yes
   become_user: clacko
 
-- hosts: {{ inv_group }}
+- hosts: "{{ inv_group }}"
   become: yes
   roles:
     - ansible-role-version-gather-linux
