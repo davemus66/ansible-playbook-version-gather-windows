@@ -1,0 +1,5 @@
+---
+
+- src: https://github.com/andrewclacko/ansible-role-version-gather-linux.git
+  scm: git
+  version: master

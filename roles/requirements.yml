@@ -1,0 +1,3 @@
+---
+
+- include: ansible-role-version-gather-linux
