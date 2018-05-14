@@ -4,3 +4,12 @@
   become: yes
   roles:
     - ansible-role-version-gather-linux
+
+- hosts: localhost
+  become: yes
+  become_user: clacko
+  post_tasks:
+    - name: running ansible facts
+      shell: ansible linux -m setup -a "filter=ansible_local" 
+
+
