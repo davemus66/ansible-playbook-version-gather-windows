@@ -11,5 +11,5 @@
   post_tasks:
     - name: running ansible facts
 #      shell: ansible linux -m setup -a "filter=ansible_local" 
-      shell: echo "ansible linux -m setup | grep local_fact"
+      shell: cat `ansible linux -m setup | grep local_fact`
 
