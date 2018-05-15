@@ -10,6 +10,7 @@
   become_user: clacko
   post_tasks:
     - name: running ansible facts
-#      shell: ansible linux -m setup -a "filter=ansible_local" 
-      shell: cat `ansible linux -m setup | grep local_fact`
+      shell: ansible linux -m setup | grep local_fact
+      register: result
+    - debug: msg="{{ result.stdout.split('\n') }}"     
 
