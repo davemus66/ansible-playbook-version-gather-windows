@@ -13,5 +13,5 @@
     - name: running ansible facts
       #shell: ansible windows -m setup -a filter local_fact
       shell: more C:\filebeat-version.txt
-      register: shell_ result
-    #- debug: msg="{{ result.stdout.split('\n') }}" 
+      register: shell_result
+    - debug: msg="{{ shell_result.stdout.split('\n') }}" 
