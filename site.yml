@@ -6,11 +6,11 @@
   roles:
     - ansible-role-version-gather-windows
 
-- hosts: localhost
-  become: yes
-  become_user: davemus
-  post_tasks:
-    - name: running ansible facts
-      shell: ansible windows -m setup | grep local_fact
-      register: result
-    - debug: msg="{{ result.stdout.split('\n') }}" 
+#- hosts: localhost
+ # become: yes
+  #become_user: davemus
+  #post_tasks:
+   # - name: running ansible facts
+    #  shell: ansible windows -m setup | grep local_fact
+     # register: result
+   # - debug: msg="{{ result.stdout.split('\n') }}" 
