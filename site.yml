@@ -6,12 +6,12 @@
   roles:
     - ansible-role-version-gather-windows
 
-- hosts: localhost
-  become: yes
-  become_user: davemus
-  post_tasks:
-    - name: running ansible facts
+#- hosts: localhost
+ # become: yes
+  #become_user: davemus
+  #post_tasks:
+   # - name: running ansible facts
       #shell: ansible windows -m setup -a filter local_fact
-      shell: more C:\filebeat-version.txt
-      register: result
-    - debug: msg="{{ result.stdout }}" 
+    #  shell: more C:\filebeat-version.txt
+     # register: result
+   # - debug: msg="{{ result.stdout }}" 
