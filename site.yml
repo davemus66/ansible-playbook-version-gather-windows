@@ -13,4 +13,4 @@
     - name: running ansible facts
       shell: ansible windows -m setup -a filter local_fact
       register: result
-    - debug: msg="{{ result.stdout.split('\n') }}" 
+    #- debug: msg="{{ result.stdout.split('\n') }}" 
