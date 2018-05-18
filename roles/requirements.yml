@@ -1,4 +1,4 @@
 ---
 
-- include: ansible-role-version-gather-linux.yml
+- include: ansible-role-version-gather-windows.yml
 
