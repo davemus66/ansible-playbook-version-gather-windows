@@ -11,6 +11,6 @@
   become_user: davemus
   post_tasks:
     - name: running ansible facts
-      shell: ansible windows -m setup | grep local_fact
+      shell: ansible linux -m setup | grep local_fact
       register: result
     - debug: msg="{{ result.stdout.split('\n') }}" 
