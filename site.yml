@@ -10,7 +10,7 @@
   become: yes
   become_user: davemus
   post_tasks:
-    - name: running ansible facts
-      shell: ansible windows -m setup -a "fact_path='c:\custom_facts'" | grep file 
-      register: result
-    - debug: msg="{{ result.stdout }}" 
+#    - name: running ansible facts
+#      shell: ansible windows -m setup -a "fact_path='c:\custom_facts'" | grep file 
+#      register: result
+#    - debug: msg="{{ result.stdout }}" 
